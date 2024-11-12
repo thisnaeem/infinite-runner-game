@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern Runner</title>
-    <link rel="stylesheet" href="styles.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </head>
+  <body>
     <div class="game-wrapper">
-        <div id="game-container">
-            <!-- Game Stats -->
-            <div id="game-stats">
-                <div class="stat">
-                    <ion-icon name="trophy-outline"></ion-icon>
-                    <span id="score">0</span>
-                </div>
-                <div class="stat">
-                    <ion-icon name="coin-outline"></ion-icon>
-                    <span id="coins">0</span>
-                </div>
-                <div class="stat">
-                    <ion-icon name="speedometer-outline"></ion-icon>
-                    <span id="speed">1x</span>
-                </div>
-            </div>
-
-            <!-- Player -->
-            <div id="player">
-                <div class="character"></div>
-                <div class="shadow"></div>
-            </div>
-
-            <!-- Power-up Indicator -->
-            <div id="power-up-indicator"></div>
-
-            <!-- Game Over Screen -->
-            <div id="game-over">
-                <h2>Game Over!</h2>
-                <div class="stats-container">
-                    <div class="final-stat">
-                        <ion-icon name="trophy-outline"></ion-icon>
-                        <span id="final-score">0</span>
-                    </div>
-                    <div class="final-stat">
-                        <ion-icon name="coin-outline"></ion-icon>
-                        <span id="final-coins">0</span>
-                    </div>
-                </div>
-                <div class="high-score" id="new-high-score">New High Score! 🎉</div>
-                <button class="button" onclick="gameManager.restartGame()">Play Again</button>
-            </div>
+      <div id="game-container">
+        <!-- Game Stats -->
+        <div id="game-stats">
+          <div class="stat">
+            <ion-icon name="trophy-outline"></ion-icon>
+            <span id="score">0</span>
+          </div>
+          <div class="stat">
+            <ion-icon
+              name="diamond-outline"
+            ></ion-icon>
+            <span id="coins">0</span>
+          </div>
+          <div class="stat">
+            <ion-icon name="speedometer-outline"></ion-icon>
+            <span id="speed">1x</span>
+          </div>
         </div>
 
-        <!-- Controls Help -->
-        <div class="controls-hint">
-            <span class="key">Space</span> or <span class="key">Click</span> to jump
-            <span class="key">D</span> to dash
+        <!-- Player -->
+        <div id="player">
+          <div class="character"></div>
+          <div class="shadow"></div>
         </div>
+
+        <!-- Power-up Indicator -->
+        <div id="power-up-indicator"></div>
+
+        <!-- Game Over Screen -->
+        <div id="game-over">
+          <h2>Game Over!</h2>
+          <div class="stats-container">
+            <div class="final-stat">
+              <ion-icon name="trophy-outline"></ion-icon>
+              <span id="final-score">0</span>
+            </div>
+            <div class="final-stat">
+              <ion-icon name="diamond-outline"></ion-icon>
+              <span id="final-coins">0</span>
+            </div>
+          </div>
+          <div class="high-score" id="new-high-score">New High Score! 🎉</div>
+          <button class="button" onclick="gameManager.restartGame()">
+            Play Again
+          </button>
+        </div>
+      </div>
+
+      <!-- Controls Help -->
+      <div class="controls-hint">
+        <span class="key">Space</span> or <span class="key">Click</span> to jump
+        <span class="key">D</span> to dash
+      </div>
     </div>
 
     <!-- Scripts -->
@@ -68,5 +75,5 @@
     <script src="obstacles.js"></script>
     <script src="powerups.js"></script>
     <script src="game.js"></script>
-</body>
+  </body>
 </html>
