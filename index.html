@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Runner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div id="game-container">
+            <div class="hud">
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Score</span>
+                        <span id="score">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Coins</span>
+                        <span id="coins">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">High Score</span>
+                        <span id="highscore">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="player"></div>
+            <div class="background-elements"></div>
+
+            <div id="game-over" class="modal">
+                <div class="modal-content">
+                    <h2>Game Over!</h2>
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-value" id="final-score">0</span>
+                            <span class="stat-label">Score</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-value" id="final-coins">0</span>
+                            <span class="stat-label">Coins</span>
+                        </div>
+                    </div>
+                    <button class="button" id="restart-button">Play Again</button>
+                </div>
+            </div>
+
+            <div id="start-screen" class="modal active">
+                <div class="modal-content">
+                    <h1>Modern Runner</h1>
+                    <p>Press SPACE or TAP to jump</p>
+                    <button class="button" id="start-button">Start Game</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/effects.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/obstacles.js"></script>
+    <script src="js/powerups.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
